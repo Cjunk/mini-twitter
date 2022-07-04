@@ -1,0 +1,75 @@
+/* Top level List Page*/
+.wholePage {
+  border:1px solid red;
+}
+.topWrapper{
+  display:grid;
+  grid-column-start: 1;
+  grid-column-end:3;
+  grid-template-columns: 1fr 1fr;
+  width:100%;
+}
+.search {
+  text-align: center;
+}
+.addToDo {
+  text-align: center;
+}
+.filter-search-box {
+  display: flex;
+}
+.theActualList{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin:15px;
+  border:4px solid black;
+}
+/* The ToDo Item */
+.TodoItem {
+  margin: 10px 10px;
+  padding: 5px 5px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  border: 1px solid black;
+}
+.todoDetail,
+.todoDetailUrgent {
+  text-align: left;
+  padding: 0 5px;
+  border: 1px solid grey;
+  margin: 0 5px;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 100%;
+}
+.todoDetailUrgent {
+  background-color: red;
+}
+/* Components */
+.todoPostButton {
+  margin: 0 5px;
+  background-color: green;
+}
+.todoPostButton:hover {
+  cursor: pointer;
+}
+.todoDeleteAllButton {
+  margin: 0 5px;
+  background-color: red;
+}
+.todoDeleteAllButton:hover {
+  cursor: pointer;
+}
+
+.todoDeleteButton {
+  background-color: orange;
+}
+.todoDeleteButton:hover {
+  cursor: pointer;
+  background-color: red;
+}
