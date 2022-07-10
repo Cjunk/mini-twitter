@@ -128,6 +128,7 @@ class TodoList extends Component {
                   id={todo.id}
                   content={todo.content}
                   priority={todo.priority}
+                  // clickEvent = {()=> {this.deleteToDoItem(index)}}  // TODO: try and implement this
                   clickEvent={this.deleteToDoItem}
                 ></TodoItem>
               );
